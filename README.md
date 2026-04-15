@@ -1,35 +1,33 @@
-# Teto_MenuMessage 
-This plugin shows messages after the menu is closed.
-
-It can be used for: Game hints, To guide the player etc.
+# TETO_VariableDisplayHUD
+This plugin shows a variable in the corner of the screen for tracking.
 
 ---
 PARAMETERS:
 
 Message Shown: Type = text
 
-*- Is the message shown after the menu is closed*
+*- Is the text show before the variable*
 
 
-Menu Message: Type = boolean (true/false)
+Variable Text: Type = number
 
-*- Enables or disables the menu message*
+*- Is the number of the variable shown*
 
 
-Message Background Type: Type = number
+Variable Text Shown: Type = boolean (true/false)
 
-*- Changes the menu message background type (Normal(0)/Dim(1)/Transparent(2))*
+*- Enables or disables the HUD*
 
 ---
 PLUGIN COMMANDS:
 
-SetMessage true/false(changes Menu Message) message(changes Message Shown) 0/1/2(changes Message Background Type)
+VarText true/false(changes Menu Message) 1+(Number of variable) message(changes Message Shown)
 
 Examples:
 
-SetMessage true Hello World and Others 2
+VarText true 2 Value:
 
-SetMessage false Hello Heaven 0
+VarText false 1 Items collected:
 
 ---
 MIT License
